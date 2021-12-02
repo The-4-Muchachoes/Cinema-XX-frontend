@@ -1,8 +1,7 @@
-import router from "./router"
+const signup = document.querySelector('.signup-nav');
+const login = document.querySelector('.login-nav');
 
-const signupButton =document.querySelector('.signup-btn')
-signupButton.addEventListener("click", () => {
-    location.href("./signup");
+signup.setAttribute('href', '/signup');
+login.setAttribute('href', '/login');
 
-    
-})
+console.log('asdf');
