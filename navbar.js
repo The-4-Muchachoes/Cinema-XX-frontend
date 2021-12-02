@@ -1,9 +1,11 @@
+export default () => {
+  renderNavbar();
+};
+
 let signup;
 let login;
 let logout;
 const navOptions = document.querySelector('.nav-options');
-
-export default () => renderNavbar();
 
 function renderNavbar() {
   let user;
