@@ -5,6 +5,7 @@ import renderLogin from './pages/login/login.js';
 
 export default () => {
   const router = new Navigo('/', { hash: true });
+  window.router = router;
   router
     .on({
       '/': () => {
