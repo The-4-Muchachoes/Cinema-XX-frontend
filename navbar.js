@@ -35,8 +35,6 @@ function renderLoggedOut() {
 }
 
 function renderLoggedIn() {
-  const user = JSON.parse(localStorage.getItem('user'));
-
   navOptions.innerHTML = `
         <div class="flex logged-in">
             <div>
@@ -48,8 +46,7 @@ function renderLoggedIn() {
   logout.setAttribute('href', '/');
 
   logout.addEventListener('click', () => {
-    user = null;
-    localStorage.setItem('user', user);
+    localStorage.setItem('user', null);
     renderNavbar();
   });
 }
