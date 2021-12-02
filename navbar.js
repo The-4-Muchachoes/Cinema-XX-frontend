@@ -3,7 +3,7 @@ let login;
 let logout;
 const navOptions = document.querySelector('.nav-options');
 
-renderNavbar();
+export default () => renderNavbar();
 
 function renderNavbar() {
   let user;
@@ -31,7 +31,29 @@ function renderLoggedOut() {
   signup = document.querySelector('.signup-nav');
   login = document.querySelector('.login-nav');
   signup.setAttribute('href', '/signup');
-  login.setAttribute('href', '/login');
+  //   login.setAttribute('href', '/login');
+
+  login.addEventListener('click', () => {
+    fetch('http://localhost:8080/api/public/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        username: 'jazzymcjazz',
+        password: 'savemeperi',
+      }),
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        if (response.accessToken) {
+          localStorage.setItem('user', JSON.stringify(response));
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  });
 }
 
 function renderLoggedIn() {
