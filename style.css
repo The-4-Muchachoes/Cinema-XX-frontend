@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 a {
   display: block;
 }
@@ -14,6 +18,10 @@ a {
   width: 100%;
 }
 
+.h150px {
+  height: 150px;
+}
+
 .ta-left {
   text-align: left;
 }
@@ -24,4 +32,14 @@ a {
 
 .ta-right {
   text-align: right;
+}
+
+/* Navbar */
+.navbar {
+  background-color: aqua;
+  padding: 8px;
+}
+
+.nav-option {
+  margin: 0 8px 0 8px;
 }
