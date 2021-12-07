@@ -80,9 +80,8 @@ a {
 
 .SignupButton{
   position: fixed;
+  font-size: 16px;
   left:48%;
-
-  
-}
+ }
 
 
