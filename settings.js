@@ -4,7 +4,7 @@ export default () => {
     window.location.host.indexOf('localhost') != -1;
 
   const localApiUrl = 'http://localhost:8080';
-  const prodApiUrl = '';
+  const prodApiUrl = 'http://api.jazzymcjazz.dk';
 
   window.apiUrl = isLocalhost ? localApiUrl : prodApiUrl;
 };

@@ -1,7 +1,8 @@
-import renderNavbar from './navbar.js';
+import renderNavbar from './components/navbar/navbar.js';
 import renderMain from '/pages/main/main.js';
 import renderSignup from '/pages/signup/signup.js';
 import renderLogin from './pages/login/login.js';
+import renderBookingPage from './pages/book-tickets/book-tickets.js';
 
 export default () => {
   const router = new Navigo('/', { hash: true });
@@ -9,21 +10,24 @@ export default () => {
   router
     .on({
       '/': () => {
-        renderMain().then(router.updatePageLinks);
+        renderMain(); //.then(router.updatePageLinks);
         console.log('User requested main page');
       },
       login: () => {
-        renderLogin();
+        renderLogin(); //.then(router.updatePageLinks);
         console.log('User requested login page');
       },
       signup: () => {
-        renderSignup().then(router.updatePageLinks);
+        renderSignup(); //.then(router.updatePageLinks);
         console.log('User requested signup page');
+      },
+      '/book-tickets/:id': ({ data }) => {
+        renderBookingPage(data.id); //.then(router.updatePageLinks);
       },
     })
     .on({
       '*': async () => {
-        renderNavbar();
+        renderNavbar().then(router.updatePageLinks);
       },
     })
     .resolve();

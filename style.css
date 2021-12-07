@@ -1,12 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/18459/production/_117371499_gettyimages-1215359845.jpg");
+  background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/18459/production/_117371499_gettyimages-1215359845.jpg');
   background-size: 100%;
-  
-
 }
-
 
 a {
   display: block;
@@ -40,9 +37,13 @@ a {
   text-align: right;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 /* Navbar */
 .navbar {
-  background-color:rgb(82, 7, 7);
+  background-color: rgb(82, 7, 7);
   padding: 13px;
 }
 
@@ -55,33 +56,69 @@ a {
   color: cornflowerblue;
 }
 
-.mainText{
-  font-size:27px !important;
+.mainText {
+  font-size: 27px !important;
   text-align: center;
-  color:cornflowerblue;
+  color: cornflowerblue;
 }
 
-.SignupTitle{
-  font-size:40px !important;
+.SignupTitle {
+  font-size: 40px !important;
   text-align: center;
-  color:cornflowerblue;
+  color: cornflowerblue;
 }
 
-.InputFields{
+.InputFields {
   text-align: center;
-  color:cornflowerblue;
-  
+  color: cornflowerblue;
 }
 
 .InputFields label {
   width: 66px;
-    display: inline-block;
+  display: inline-block;
 }
 
-.SignupButton{
+.SignupButton {
   position: fixed;
   font-size: 16px;
-  left:48%;
- }
+  left: 48%;
+}
 
+/* Booking Page */
+.movie-poster {
+  max-width: 250px;
+}
 
+.seat {
+  height: 25px;
+  width: 25px;
+  border: 2px black solid;
+  margin: 2px 2px 2px 2px;
+  display: inline-block;
+  /* background-color: green; */
+  /* background-image: url('/components/img/chair.png');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.available {
+  background-color: grey;
+}
+
+.available:hover {
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.reserved {
+  background-color: green;
+  cursor: pointer;
+}
+
+.unavailable {
+  background-color: red;
+}
+
+.book-seats-container button {
+  font-size: 1.2em;
+}

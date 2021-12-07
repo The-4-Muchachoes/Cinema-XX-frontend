@@ -34,7 +34,7 @@ function handleLoginFunctionality() {
           localStorage.setItem('user', JSON.stringify(data));
           // navigating to the users route. Using the global window.router
           // window.router.navigate(`/user/${data.id}`);
-          window.router.navigate('/');
+          window.history.go(-1);
         }
       });
   });
