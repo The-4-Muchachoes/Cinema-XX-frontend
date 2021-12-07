@@ -1,6 +1,12 @@
 body {
   margin: 0;
+  padding: 0;
+  background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/18459/production/_117371499_gettyimages-1215359845.jpg");
+  background-size: 100%;
+  
+
 }
+
 
 a {
   display: block;
@@ -36,10 +42,47 @@ a {
 
 /* Navbar */
 .navbar {
-  background-color: aqua;
-  padding: 8px;
+  background-color:rgb(82, 7, 7);
+  padding: 13px;
 }
 
 .nav-option {
   margin: 0 8px 0 8px;
 }
+
+.mainTitle {
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.mainText{
+  font-size:27px !important;
+  text-align: center;
+  color:cornflowerblue;
+}
+
+.SignupTitle{
+  font-size:40px !important;
+  text-align: center;
+  color:cornflowerblue;
+}
+
+.InputFields{
+  text-align: center;
+  color:cornflowerblue;
+  
+}
+
+.InputFields label {
+  width: 66px;
+    display: inline-block;
+}
+
+.SignupButton{
+  position: fixed;
+  left:48%;
+
+  
+}
+
+
