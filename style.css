@@ -34,6 +34,10 @@ a {
   text-align: right;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 /* Navbar */
 .navbar {
   background-color: aqua;
@@ -42,4 +46,43 @@ a {
 
 .nav-option {
   margin: 0 8px 0 8px;
+}
+
+/* Booking Page */
+.movie-poster {
+  max-width: 250px;
+}
+
+.seat {
+  height: 25px;
+  width: 25px;
+  border: 2px black solid;
+  margin: 2px 2px 2px 2px;
+  display: inline-block;
+  /* background-color: green; */
+  /* background-image: url('/components/img/chair.png');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.available {
+  background-color: grey;
+}
+
+.available:hover {
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.reserved {
+  background-color: green;
+  cursor: pointer;
+}
+
+.unavailable {
+  background-color: red;
+}
+
+.book-seats-container button {
+  font-size: 1.2em;
 }
