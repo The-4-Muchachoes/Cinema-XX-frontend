@@ -24,7 +24,7 @@ fetch(apiUrl)
             console.log(movie.movie.trailerUrl);
           });
 
-          movieTickets.innerHTML = 'Monkey';
+          movieTickets.innerHTML = 'Buy Ticket';
 
           movieImage.src = movie.movie.posterUrl;
           movieTitle.innerHTML = movie.movie.title;
@@ -34,7 +34,7 @@ fetch(apiUrl)
           movieContainer.appendChild(movieTitle);
           movieContainer.appendChild(movieTickets);
       
-          document.getElementById('screenings').appendChild(movieContainer);
+          document.querySelector('.screenings').appendChild(movieContainer);
       });
     })   
 
