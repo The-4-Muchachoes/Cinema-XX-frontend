@@ -8,7 +8,7 @@ export default () => {
       });
   };
 
-const apiUrl = 'http://api.jazzymcjazz.dk/api/public/screenings/2/14-10-2021/20-11-2022';
+const apiUrl = 'http://api.jazzymcjazz.dk/api/public/screenings/1/14-10-2021/20-11-2022';
 fetch(apiUrl)
 .then(response => response.json())
 .then(movieData => {
