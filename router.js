@@ -4,6 +4,7 @@ import renderSignup from '/pages/signup/signup.js';
 import renderLogin from './pages/login/login.js';
 import renderBookingPage from './pages/book-tickets/book-tickets.js';
 import renderOrders from './pages/my-orders/my-orders.js';
+import renderNowPlaying from './pages/screening/screening.js';
 
 export default () => {
   const router = new Navigo('/', { hash: true });
@@ -27,6 +28,9 @@ export default () => {
       },
       orders: () => {
         renderOrders();
+      },
+      'now-playing': () => {
+        renderNowPlaying().then(router.updatePageLinks);
       },
     })
     .on({
