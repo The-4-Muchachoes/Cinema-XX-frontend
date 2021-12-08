@@ -137,6 +137,17 @@ a {
 }
 
 .screenings h1 {
-  color: #000000;
+  color: #0e0d0d;
+}
+
+.screenings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  width: max-content;
+  margin: 0 auto;
+}
+.screening-title {
+  color: cornflowerblue;
 }
 
