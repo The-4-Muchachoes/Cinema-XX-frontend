@@ -124,3 +124,49 @@ a {
 }
 
 /* Orders */
+.orders-wrapper {
+  background-color: rgba(61, 61, 61, 0.4);
+  color: white;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 5px;
+}
+
+.orders {
+  font-weight: bold;
+  font-size: large;
+}
+
+.orders h1 {
+  color: cornflowerblue;
+}
+
+.order img {
+  max-height: 220px;
+}
+
+.order td {
+  vertical-align: top;
+  padding: 5px 5px;
+}
+
+.cancel-td {
+  vertical-align: middle !important;
+}
+
+.cancel-td button {
+  background: red;
+  color: white;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.cancel-td button:hover {
+  cursor: pointer;
+}
+
+.order-info {
+  margin-right: 20px;
+}
