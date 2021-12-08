@@ -62,7 +62,7 @@ a {
   color: cornflowerblue;
 }
 
-.SignupTitle {
+.SecondTitle {
   font-size: 40px !important;
   text-align: center;
   color: cornflowerblue;
@@ -78,7 +78,7 @@ a {
   display: inline-block;
 }
 
-.SignupButton {
+.Buttons {
   position: fixed;
   font-size: 16px;
   left: 48%;
