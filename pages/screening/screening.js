@@ -12,7 +12,11 @@ const apiUrl = 'http://api.jazzymcjazz.dk/api/public/screenings/1/14-10-2021/20-
 fetch(apiUrl)
 .then(response => response.json())
 .then(movieData => {
+  //testing what movieData returns
+  console.log(movieData);
         movieData.forEach(movie => {
+          //testing what movie returns
+          console.log(movie);
           const movieContainer = document.createElement('div');
           movieContainer.classList.add('movieContainer');
 
