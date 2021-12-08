@@ -50,7 +50,7 @@ a {
 .nav-option {
   margin: 0 8px 0 8px;
 }
-
+/* Headers and Titles*/
 .mainTitle {
   text-align: center;
   color: cornflowerblue;
@@ -68,6 +68,7 @@ a {
   color: cornflowerblue;
 }
 
+/* Inputs and buttons */
 .InputFields {
   text-align: center;
   color: cornflowerblue;
