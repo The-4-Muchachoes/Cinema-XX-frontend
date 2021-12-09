@@ -7,6 +7,8 @@ body {
 
 a {
   display: block;
+  color: cornflowerblue;
+  font-size: large;
 }
 
 .flex {
@@ -44,17 +46,20 @@ a {
 /* Navbar */
 .navbar {
   background-color: rgb(82, 7, 7);
-  padding: 13px;
+  padding: 10px;
 }
 
 .nav-option {
   margin: 0 8px 0 8px;
 }
 
-.mainTitle {
-  text-align: center;
-  color: cornflowerblue;
+.logo-link {
+  font-family: fantasy;
+  font-size: 27px;
+  font-weight: 900;
 }
+
+/* Headers and Titles*/
 
 .mainText {
   font-size: 27px !important;
@@ -62,12 +67,17 @@ a {
   color: cornflowerblue;
 }
 
-.SignupTitle {
-  font-size: 40px !important;
+.mainText a {
+  font-size: 27px !important;
+}
+
+.SecondTitle {
+  font-size: 48px !important;
   text-align: center;
   color: cornflowerblue;
 }
 
+/* Inputs and buttons */
 .InputFields {
   text-align: center;
   color: cornflowerblue;
@@ -78,7 +88,7 @@ a {
   display: inline-block;
 }
 
-.SignupButton {
+.Buttons {
   position: fixed;
   font-size: 16px;
   left: 48%;
@@ -169,4 +179,19 @@ a {
 
 .order-info {
   margin-right: 20px;
+}
+/* for screening */
+.screenings .movieContainer {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.screenings img {
+  width: 100%;
+}
+
+.screenings h1 {
+  color: #000000;
 }

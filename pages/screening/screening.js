@@ -8,7 +8,7 @@ export default () => {
       });
   };
 
-const apiUrl = 'http://api.jazzymcjazz.dk/api/public/screenings/2/14-10-2021/20-11-2022';
+const apiUrl = 'http://api.jazzymcjazz.dk/api/public/screenings/1/14-10-2021/20-11-2022';
 fetch(apiUrl)
 .then(response => response.json())
 .then(movieData => {
@@ -24,7 +24,7 @@ fetch(apiUrl)
             console.log(movie.movie.trailerUrl);
           });
 
-          movieTickets.innerHTML = 'Monkey';
+          movieTickets.innerHTML = 'Buy Ticket';
 
           movieImage.src = movie.movie.posterUrl;
           movieTitle.innerHTML = movie.movie.title;
@@ -34,7 +34,7 @@ fetch(apiUrl)
           movieContainer.appendChild(movieTitle);
           movieContainer.appendChild(movieTickets);
       
-          document.getElementById('screenings').appendChild(movieContainer);
+          document.querySelector('.screenings').appendChild(movieContainer);
       });
     })   
 
