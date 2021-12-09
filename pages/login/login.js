@@ -36,6 +36,9 @@ function handleLoginFunctionality() {
           // window.router.navigate(`/user/${data.id}`);
           window.history.go(-1);
         }
+      })
+      .catch((error) => {
+        console.log(error);
       });
   });
 }

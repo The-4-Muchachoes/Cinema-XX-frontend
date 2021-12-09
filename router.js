@@ -3,7 +3,8 @@ import renderMain from '/pages/main/main.js';
 import renderSignup from '/pages/signup/signup.js';
 import renderLogin from './pages/login/login.js';
 import renderBookingPage from './pages/book-tickets/book-tickets.js';
-import renderScreening from './pages/screening/screening.js';
+import renderOrders from './pages/my-orders/my-orders.js';
+import renderNowPlaying from './pages/screening/screening.js';
 
 export default () => {
   const router = new Navigo('/', { hash: true });
@@ -11,22 +12,25 @@ export default () => {
   router
     .on({
       '/': () => {
-        renderMain(); //.then(router.updatePageLinks);
+        renderMain().then(router.updatePageLinks);
         console.log('User requested main page');
       },
       login: () => {
-        renderLogin(); //.then(router.updatePageLinks);
+        renderLogin().then(router.updatePageLinks);
         console.log('User requested login page');
       },
       signup: () => {
-        renderSignup(); //.then(router.updatePageLinks);
+        renderSignup().then(router.updatePageLinks);
         console.log('User requested signup page');
       },
       '/book-tickets/:id': ({ data }) => {
-        renderBookingPage(data.id); //.then(router.updatePageLinks);
+        renderBookingPage(data.id).then(router.updatePageLinks);
+      },
+      orders: () => {
+        renderOrders();
       },
       screening: () => {
-        renderScreening();
+        renderNowPlaying();
       },
     })
     .on({
