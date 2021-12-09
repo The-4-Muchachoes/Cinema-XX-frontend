@@ -76,6 +76,9 @@ a {
   text-align: center;
   color: cornflowerblue;
 }
+.movieTitle{
+  color:cornflowerblue;
+}
 
 /* Inputs and buttons */
 .InputFields {
