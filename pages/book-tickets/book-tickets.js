@@ -3,8 +3,8 @@ export default (id) => {
 
   return fetch('./pages/book-tickets/book-tickets.html')
     .then((response) => response.text())
-    .then((loginHtml) => {
-      content.innerHTML = loginHtml;
+    .then((bookTicketHtml) => {
+      content.innerHTML = bookTicketHtml;
       renderPage(id);
     });
 };
@@ -83,7 +83,7 @@ function renderSeating(seatingData) {
 
       rowDiv.appendChild(seatDiv);
     }
-    bookingTools.appendChild(rowDiv);
+    seatContainer.appendChild(rowDiv);
   }
 
   bookingTools.appendChild(seatContainer);
@@ -113,7 +113,7 @@ function renderConfirmationButton(selectedSeats, screeningId) {
   con.appendChild(btn);
 }
 
-function sendBookSeatsRequest(seats, screeningId) {
+async function sendBookSeatsRequest(seats, screeningId) {
   let seatIds = [];
   seats.forEach((seat) => {
     seatIds.push(seat.id);
@@ -126,7 +126,7 @@ function sendBookSeatsRequest(seats, screeningId) {
   console.log(screeningId);
   console.log(seatIds);
 
-  fetch(`${window.apiUrl}/api/user/bookings`, {
+  await fetch(`${window.apiUrl}/api/user/bookings`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json; charset=UTF-8',

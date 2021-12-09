@@ -37,6 +37,7 @@ function renderOrders(orders) {
   const ordersDiv = document.querySelector('.orders');
 
   orders.forEach((order) => {
+    console.log(order.screening.startTime);
     const datetime = order.screening.startTime.split('T');
     const date = formatDate(datetime[0]);
     const time = datetime[1].slice(0, 5);
