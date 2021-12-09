@@ -28,9 +28,6 @@ function renderLoggedOut() {
                <a href="" class="screening-nav nav-option" data-navigo>Screenings</a>
             </div>
             <div>
-               <a href="" class="my-orders-nav nav-option" data-navigo>My Bookings</a>
-            </div>
-            <div>
                 <a href="" class="signup-nav nav-option" data-navigo>Signup</a>
             </div>
             <div>
@@ -38,27 +35,35 @@ function renderLoggedOut() {
             </div>
          </div>`;
 
-  const myorders = document.querySelector('.my-orders-nav');       
   const signup = document.querySelector('.signup-nav');
   const login = document.querySelector('.login-nav');
   const screening = document.querySelector('.screening-nav');
   signup.setAttribute('href', '/signup');
   login.setAttribute('href', '/login');
-  screening.setAttribute('href','/screening');
-  myorders.setAttribute('href','/my-orders');
+  screening.setAttribute('href', '/screening');
 }
 
 function renderLoggedIn() {
   const navOptions = document.querySelector('.nav-options');
 
   navOptions.innerHTML = `
-        <div class="flex logged-in">
-            <div>
-                <a class="logout-nav nav-option">Logout</a>
-            </div>
-        </div>`;
+      <div class="flex logged-in">
+        <div>
+          <a href="" class="screening-nav nav-option" data-navigo>Screenings</a>
+        </div>
+        <div>
+          <a href="" class="my-orders-nav nav-option" data-navigo>My Bookings</a>
+        </div>
+        <div>
+          <a class="logout-nav nav-option">Logout</a>
+        </div>
+      </div>`;
 
+  const screening = document.querySelector('.screening-nav');
+  const myorders = document.querySelector('.my-orders-nav');
   const logout = document.querySelector('.logout-nav');
+  screening.setAttribute('href', '/screening');
+  myorders.setAttribute('href', '/orders');
   logout.setAttribute('href', window.location.hash);
 
   logout.addEventListener('click', () => {

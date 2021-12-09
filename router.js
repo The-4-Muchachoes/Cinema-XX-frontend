@@ -27,10 +27,10 @@ export default () => {
         renderBookingPage(data.id).then(router.updatePageLinks);
       },
       orders: () => {
-        renderOrders();
+        renderOrders().then(router.updatePageLinks);
       },
       screening: () => {
-        renderNowPlaying();
+        renderNowPlaying().then(router.updatePageLinks);
       },
     })
     .on({
