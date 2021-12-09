@@ -1,3 +1,5 @@
+// copied from tutorial
+
 export default () => {
   const isLocalhost =
     window.location.host.indexOf('127.0.0.1') != -1 ||

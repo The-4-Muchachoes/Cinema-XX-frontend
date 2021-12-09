@@ -1,3 +1,5 @@
+// Written by Chris
+
 export default () => {
   const content = document.querySelector('.content');
 

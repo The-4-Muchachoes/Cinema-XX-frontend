@@ -1,3 +1,5 @@
+// Written by everyone
+
 import renderNavbar from './components/navbar/navbar.js';
 import renderMain from '/pages/main/main.js';
 import renderSignup from '/pages/signup/signup.js';

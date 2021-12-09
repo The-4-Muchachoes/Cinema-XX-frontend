@@ -1,3 +1,5 @@
+// Written by Lars and Periklis
+
 export default () => {
   const header = document.querySelector('.header');
 

@@ -1,3 +1,5 @@
+// Written by Periklis
+
 export default () => {
   const content = document.querySelector('.content');
 
