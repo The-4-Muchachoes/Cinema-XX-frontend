@@ -149,5 +149,7 @@ a {
 }
 .screening-title {
   color: cornflowerblue;
+  font-size: 45px !important;
+  text-align: center;
 }
 
