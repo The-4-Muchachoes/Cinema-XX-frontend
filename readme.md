@@ -12,6 +12,6 @@ Hosted frontend: http://jazzymcjazz.dk/
 
 Notes:
 
-The backend is hosted using AWS. The frontend is hosted with surge.
+The backend is hosted using AWS. The frontend is hosted with surge.sh
 
 DNS by Cloudflare with our custom domain (owned by Lars).
