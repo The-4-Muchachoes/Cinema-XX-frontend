@@ -33,6 +33,7 @@ async function fetchSeatingAvailability(screeningId) {
 function renderMovieDetails(screening) {
   const title = document.querySelector('h1');
   const img = document.querySelector('.movie-poster');
+  img.setAttribute('alt', 'movie poster');
   title.innerHTML = screening.movie.title;
   img.setAttribute('src', screening.movie.posterUrl);
 }

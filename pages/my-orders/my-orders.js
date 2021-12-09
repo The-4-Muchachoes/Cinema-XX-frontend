@@ -73,7 +73,7 @@ function getOrderHtml(order, date, time) {
     <tbody>
       <tr>
         <td rowspan="6">
-          <img src="${order.screening.movie.posterUrl}"/>
+          <img src="${order.screening.movie.posterUrl}" alt="movie poster"/>
         </td>
         <td>Movie:</td>
         <td>${order.screening.movie.title}</td>

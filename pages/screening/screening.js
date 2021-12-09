@@ -37,6 +37,7 @@ function renderScreenings() {
 
         const movieTitle = document.createElement('h1');
         const movieImage = document.createElement('img');
+        movieImage.setAttribute('alt', 'movie poster');
 
         const movieTickets = document.createElement('button');
         movieTickets.addEventListener('click', () => {
