@@ -1,12 +1,12 @@
 // Written by everyone
 
-import renderNavbar from './components/navbar/navbar.js';
+import renderNavbar from '../navbar/navbar.js';
 import renderMain from '/pages/main/main.js';
 import renderSignup from '/pages/signup/signup.js';
-import renderLogin from './pages/login/login.js';
-import renderBookingPage from './pages/book-tickets/book-tickets.js';
-import renderOrders from './pages/my-orders/my-orders.js';
-import renderNowPlaying from './pages/screening/screening.js';
+import renderLogin from '../../pages/login/login.js';
+import renderBookingPage from '../../pages/book-tickets/book-tickets.js';
+import renderOrders from '../../pages/my-orders/my-orders.js';
+import renderNowPlaying from '../../pages/screening/screening.js';
 
 export default () => {
   const router = new Navigo('/', { hash: true });

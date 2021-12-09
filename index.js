@@ -1,7 +1,7 @@
 // Copied from the tutorial
 
-import settings from './settings.js';
-import startRouter from './router.js';
+import settings from './components/settings/settings.js';
+import startRouter from './components/router/router.js';
 
 settings();
 startRouter();
