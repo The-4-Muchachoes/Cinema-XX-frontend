@@ -55,7 +55,7 @@ async function renderBookingTool(screening) {
 function renderNotAuthenticatedMsg() {
   const bookingTools = document.querySelector('.booking-tools');
   const notAuthenticatedMsg = document.createElement('p');
-  notAuthenticatedMsg.setAttribute('class', 'ta-center');
+  notAuthenticatedMsg.setAttribute('class', 'ta-center blue');
   notAuthenticatedMsg.innerHTML =
     'Please <a class="inline-block" href="/#/signup">signup</a> or <a class="inline-block" href="/#/login">login</a> to book tickets';
   bookingTools.appendChild(notAuthenticatedMsg);

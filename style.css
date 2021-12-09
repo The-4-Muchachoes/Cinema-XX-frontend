@@ -41,6 +41,8 @@ a {
 
 .inline-block {
   display: inline-block;
+}
+.blue{
   color:cornflowerblue;
 }
 
