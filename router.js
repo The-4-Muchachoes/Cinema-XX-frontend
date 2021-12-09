@@ -25,9 +25,9 @@ export default () => {
       '/book-tickets/:id': ({ data }) => {
         renderBookingPage(data.id); //.then(router.updatePageLinks);
       },
-      '/screening/': () => {
+      screening: () => {
         renderScreening();
-      }
+      },
     })
     .on({
       '*': async () => {
